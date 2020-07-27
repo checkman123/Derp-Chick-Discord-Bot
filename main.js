@@ -41,6 +41,9 @@ client.on('message', message => {
     if(command === '8ball'){
         client.commands.get('8ball').execute(message, args);
     }
+    if(command === 'emotes'){
+        client.commands.get('emotes').execute(message, args);
+    }
 })
 
 
