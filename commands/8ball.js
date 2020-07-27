@@ -3,7 +3,7 @@ module.exports = {
     description: "Random answer to the question",
     execute(message,args){
         var msg = "";
-        if(args){
+        if(args != ""){
             var choices = [
             "As I see it, yes.",
             "Ask again later.", 
