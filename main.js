@@ -42,4 +42,4 @@ client.on('message', message => {
 
 
 //Need to be at the bottom
-client.login('NzM3Mjk4Nzk3OTM1MTk4MjU4.Xx7VAw.Ov-tLeeHcHf8baWok8jKiZ1_Zkk');
+client.login(process.env.token);
