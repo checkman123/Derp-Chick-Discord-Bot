@@ -2,7 +2,9 @@ module.exports = {
     name: '8ball',
     description: "Random answer to the question",
     execute(message,args){
-        var choices = [
+        var msg = "";
+        if(args){
+            var choices = [
             "As I see it, yes.",
             "Ask again later.", 
             "Better not tell you now.",
@@ -23,8 +25,11 @@ module.exports = {
             "Yes.", 
             "Yes – definitely.",
             "You may rely on it.",
-        ];
-        var msg = choices[Math.floor(Math.random() * choices.length)];
+            ];
+            msg = choices[Math.floor(Math.random() * choices.length)];
+        }else{
+            msg = "Please enter your question."
+        }
 
         message.channel.send(msg);
     }
