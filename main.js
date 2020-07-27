@@ -38,6 +38,9 @@ client.on('message', message => {
     if(command === 'help'){
         client.commands.get('help').execute(message, args);
     }
+    if(command === '8ball'){
+        client.commands.get('8ball').execute(message, args);
+    }
 })
 
 
