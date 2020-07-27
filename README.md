@@ -1,4 +1,5 @@
-Derp-Chick-Discord-Bot  
+**Derp-Chick-Discord-Bot  **
+
 Commands:  
 -help  
 -ping  
